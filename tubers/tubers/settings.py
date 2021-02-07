@@ -26,7 +26,7 @@ SECRET_KEY = '0(!ec8oq%!6_epp5g03zsp)b!n^rr(d(n+k5cc76&&3ftn$q!5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # after social authentication where you want to redirect the user
 LOGIN_REDIRECT_URL = 'dashboard'
@@ -94,10 +94,10 @@ WSGI_APPLICATION = 'tubers.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lcotubers',
-        'USER': 'postgres',
-        'PASSWORD': '0611',
-        'HOST': 'localhost'
+        'NAME': 'live_db',
+        'USER': 'ajeet',
+        'PASSWORD': '0611ajeet',
+        'HOST': 'database-1.cj6ryis2qhif.ap-south-1.rds.amazonaws.com'
     }
 }
 
